@@ -1,0 +1,659 @@
+/* ---------- 300 à 576px ---------- */
+/* ---------- Smartphone ---------- */
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    background-color: #F4F4F5;
+}
+
+
+/* ---------------------------------------- HERO ---------------------------------------- */
+
+.hero_contact{
+    padding: 12px;
+    display: none;
+}
+
+.hero_content_1{
+    padding: 5px;
+    display: flex;
+}
+
+.hero_text{
+    padding: 5px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero_name{
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.hero_title{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.hero_presentation_2{
+    display: none;
+}
+
+.hero_button_2{
+    display: none;
+}
+
+.hero_image{
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+#hero_image{
+    width: 100%;
+    border: solid black;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.hero_presentation_1{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.hero_button_1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#hero_button_1{
+    background-color: #D6D3D1;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+}
+
+#hero_button_1:hover{
+    background-color: #E7E5E4;
+    color: black;
+    cursor: pointer;
+}
+
+/* ---------------------------------------- CONTENT ---------------------------------------- */
+
+.content{
+    padding: 5px;
+    text-align: center;
+}
+
+.wid_title{
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: #334155;
+    font-weight: 700;
+}
+
+.xp_box{
+    border: solid black;
+    border-radius: 5px;
+    margin: 20px auto;
+    background-color: #E7E5E4;
+}
+
+.xp_title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.wid_text{
+    font-size: 1.1rem;
+}
+
+.xp_infos{
+    display: flex;
+    margin: 15px auto;
+    align-items: center;
+    background-color: #e0dedd;
+}
+
+.xp_period{
+    flex: 1;
+    font-weight: 600;
+}
+
+.xp_detail{
+    flex: 2;
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------- PROJECTS ---------------------------------------- */
+
+.projects_box{
+    text-align: center;
+
+}
+
+.projects_title{
+    font-size: 0.8rem;
+    margin-top: 30px;
+    color: #334155;
+}
+
+.projects_text{
+    font-size: 1.1rem;
+}
+
+
+/* ---------------------------------------- EXPERIENCES ---------------------------------------- */
+
+.experiences{
+    margin: 5px;
+}
+
+.experience{
+    border: solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-items: center;
+    padding: 10px;
+    background-color: #E7E5E4;
+}
+
+.experience_image_2{
+    display: none;
+}
+
+.experience_image_1{
+    width: 100%;
+    text-align: center;
+}
+
+#experience_image_1{
+    width: 90%;
+    max-width: 200px;
+}
+
+.experience_text{
+    padding: 10px;
+    background-color: #e0dedd;
+    margin: 5px;
+}
+
+.experience_title{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.experience_description{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.experience_link{
+    font-size: 0.8rem;
+    margin: 10px auto;
+}
+
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+.footer{
+    height: 70px;
+    margin-top: 15px;
+    background-color: #1C1917;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer_text{
+    color: white;
+    font-size: 0.7rem;
+}
+
+
+/* ---------- 576 à 768px ---------- */
+/* ---------- Tablet ---------- */
+
+@media screen and (min-width: 576px)
+{
+    .hero_name{
+        font-size: 1.5rem;
+    }
+
+    .hero_title{
+        font-size: 2rem;
+    }
+
+    .hero_presentation_2{
+        display: block;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .hero_presentation_1{
+        display: none;
+    }
+
+    #hero_button_1{
+        font-size: 1.5rem;
+    }
+
+
+/* ---------------------------------------- EXPERIENCES ---------------------------------------- */
+
+    .experience{
+        display: flex;
+    }
+
+    .experience_image_2{
+        display: block;
+    }
+
+
+    #experience_image_2{
+        width: 100%;
+        min-width: 150px;
+        max-width: 500px;
+    }
+
+    .experience_image_1{
+        display: none;
+    }
+
+
+}
+
+/* ---------- 768 à 992px ---------- */
+/* ---------- Laptop ---------- */
+
+@media screen and (min-width: 768px) 
+{
+    /*
+    .hero_contact{
+        display: block;
+        text-align: center;
+        background-color: aqua;
+    }
+    */
+
+
+    .hero_name{
+        font-size: 1.8rem;
+    }
+
+    .hero_title{
+        font-size: 2.2rem;
+    }
+
+    .hero_presentation_2{
+        font-size: 1.5rem;
+    }
+
+    .hero_button_2{
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #hero_button_2{
+        font-size: 1.8rem;
+        background-color: #D6D3D1;
+        padding: 10px 25px;
+
+    }
+    
+    #hero_button_2:hover{
+        background-color: #E7E5E4;
+        color: white;
+        cursor: pointer;
+    }
+
+    #hero_button_1{
+        display: none;
+    }
+    
+    
+/* ---------------------------------------- CONTENT ---------------------------------------- */
+
+    .content{
+        margin: 10px 5px;
+    }
+
+/* ---------------------------------------- EXPERIENCES ---------------------------------------- */
+
+    .experience{
+        padding: 5px;
+    }
+
+    #experience_image_2{
+        width: 100%;
+        min-width: 170px;
+        max-width: 300px;
+    }
+
+    .experience_image_1{
+        display: none;
+    }
+
+
+
+}
+
+
+/* ---------- Sup à 992px ---------- */
+/* ---------- Wide screen ---------- */
+
+@media screen and (min-width: 992px) 
+{
+    .hero_content_1{
+        margin: 0 auto;
+        width: 90%;
+        min-width: 300px;
+        max-width: 1000px;
+    }
+
+    .hero_text{
+        padding: 30px;
+        padding-left: 50px;
+        display: flex;
+    }
+
+    .hero_name{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .hero_presentation_2{
+        font-size: 1.6rem;
+    }
+
+    
+    #hero_image{
+        min-width: 320px;
+    }
+
+
+
+/* ---------------------------------------- CONTENT ---------------------------------------- */
+
+    .content{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .projects{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+/* ---------------------------------------- EXPERIENCES ---------------------------------------- */
+
+
+    .experiences{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .experience{
+        padding: 10px;
+    }
+
+    #experience_image_2{
+        max-width: 300px;
+    }
+
+}
+
+/* General */
+/*
+
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: "Inter", sans-serif;
+    background-color: #FFF8F0;
+    font-weight: 400;
+    line-height: 24px;
+    color: #331E6A;
+}
+
+
+h1{
+    font-family: "League Spartan";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #190D37;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-family: League Spartan;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: black;
+    max-width: 700px;
+    margin: 8px auto;
+}
+
+.small_title{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #2858FF;
+    text-align: center;
+    margin-top: 96px;
+}
+
+.small_title_section{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.section_description{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #331E6A;
+    text-decoration: underline;
+
+}
+
+
+
+/* HERO */
+/*
+#hero{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#hero_text{
+    width: 50%;
+    padding: 0 20px 32px 20px;
+}
+
+#contact{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 32px;
+    color: black;
+}
+
+#hi{
+    margin-top: 52px;
+}
+
+#hero_image{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#photo{
+    object-fit: cover;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+#me_contacter{
+    width: 138px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: #2F2F2F;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 32px;
+}
+
+#me_contacter:hover{
+    color: black;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+/* WHAT I DO */
+/*
+#what_i_do{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#experience_boxes{
+    display: flex;
+    margin: 10px auto;
+}
+
+.boxes{
+    padding: 20px;
+    margin: 0 10px;
+    background-color: white;
+    box-shadow: 6px 2px 25px -9px #0000001A;
+}
+
+.box_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 20px 20px 0 20px;
+}
+
+.box_content{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #55206D;
+}
+
+/* MY Projects */
+/*
+#my_projects{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+.project{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.project_image{
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    min-height: 160px;
+    min-width: 160px;
+}
+
+#project_image{
+    height: 140px;
+    width: 100%;
+    max-width: 180px;
+    max-height: auto;
+    margin: auto auto;
+    border-radius: 5px;
+}
+
+
+.project_texte{
+    width: 90%; 
+}
+
+.project_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #291854;
+    text-align: left;
+}
+
+.project_text{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #55206D;
+    text-align: left;
+}
+
+.project_link{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #6A87A3;
+    text-align: left;
+    margin-top: 8px;
+}
+
+/* FOOTER */
+/*
+.footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
