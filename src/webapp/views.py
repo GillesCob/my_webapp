@@ -26,6 +26,14 @@ def flexbox():
 def bootstrap():
     return render_template('bootstrap.html',user=current_user)
 
+@views.route('/carousel')
+def carousel():
+    return render_template('carousel.html',user=current_user)
+
+@views.route('/responsive')
+def responsive():
+    return render_template('responsive.html',user=current_user)
+
 @views.route('/login')
 def login():
     return render_template('login.html',user=current_user)

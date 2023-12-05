@@ -1,0 +1,34 @@
+.c-item_1{
+  height: 480px;
+}
+
+.c-img_1 {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: brightness(0.6);
+  }
+
+/* Personnalisation du positionnement des flèches en pourcentage */
+.carousel-control-prev_1 {
+  left: 20% !important; /* Ajustez la valeur selon vos besoins pour déplacer la flèche gauche vers la gauche */
+}
+
+.carousel-control-next_1 {
+  right: 20% !important; /* Ajustez la valeur selon vos besoins pour déplacer la flèche droite vers la droite */
+}
+
+
+
+/* Carousel n°2 */
+
+.c-item_2{
+  height: 480px;
+}
+
+.c-img_2 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  }
