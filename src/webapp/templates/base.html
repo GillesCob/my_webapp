@@ -26,7 +26,7 @@
             <!--https://getbootstrap.com/docs/5.3/components/navbar/-->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="{{url_for('views.home_page')}}">Flask template</a>
+                    <a class="navbar-brand" href="{{url_for('views.home_page')}}">A / A</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -72,7 +72,28 @@
                             
 
                             <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Menu 3</a>
+                                <a class="nav-link" href="{{url_for('views.github')}}">Github</a>
+                            </li>
+
+                            <!--  Boite à outils -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Boite à outils
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="{{url_for('views.outils_design')}}">Design</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{url_for('views.outils_api')}}">API</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{url_for('views.outils_deploiement')}}">Déploiement</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{url_for('views.outils_documentaire')}}">Sources documentaires</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>

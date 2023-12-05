@@ -34,6 +34,29 @@ def carousel():
 def responsive():
     return render_template('responsive.html',user=current_user)
 
+@views.route('/github')
+def github():
+    return render_template('github.html',user=current_user)
+
+@views.route('/outils_design')
+def outils_design():
+    return render_template('outils_design.html',user=current_user)
+
+@views.route('/outils_api')
+def outils_api():
+    return render_template('outils_api.html',user=current_user)
+
+@views.route('/outils_deploiement')
+def outils_deploiement():
+    return render_template('outils_deploiement.html',user=current_user)
+
+@views.route('/outils_documentaire')
+def outils_documentaire():
+    return render_template('outils_documentaire.html',user=current_user)
+
+
+
+
 @views.route('/login')
 def login():
     return render_template('login.html',user=current_user)
