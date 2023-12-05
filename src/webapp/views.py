@@ -9,18 +9,22 @@ views = Blueprint("views", __name__)
 def home_page():
     return render_template('home.html',user=current_user)
 
-@views.route('/menu-1')
-def menu_1():
-    return render_template('menu_1.html',user=current_user)
+@views.route('/cv-1')
+def cv_1():
+    return render_template('cv_1.html',user=current_user)
 
-@views.route('/menu-2')
-@login_required
-def menu_2():
-    return render_template('menu_2.html',user=current_user)
+@views.route('/cv-2')
+#@login_required
+def cv_2():
+    return render_template('cv_2.html',user=current_user)
 
 @views.route('/flexbox')
 def flexbox():
     return render_template('flexbox.html',user=current_user)
+
+@views.route('/bootstrap')
+def bootstrap():
+    return render_template('bootstrap.html',user=current_user)
 
 @views.route('/login')
 def login():
