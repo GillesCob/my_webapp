@@ -1,0 +1,985 @@
+/* ------------------------------------------------------------------------------------------ */
+/* Configurations natives pour le body et les boxs */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2{
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: red;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: green;
+}
+.mise_en_page{
+    display: flex;
+}
+
+.main_box_1_image{
+    width: 50%;
+    text-align: center;
+}
+
+#image{
+    width: 70%;
+    max-width: 300px;
+}
+
+#image_2{
+    width: 30%;
+    
+}
+
+.box_1{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+}
+
+.box_2{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+}
+
+.box_3{
+    background-color: rgb(3, 82, 98);
+    border: solid white;
+    padding: 10px;
+
+}
+
+.box_4{
+    background-color: rgb(22, 3, 90);
+    border: solid white;
+    padding: 10px;
+
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Mise en place des différentes configurations */
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* flex-directions */
+
+.flex_directions{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_1{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-direction: row;
+}
+
+.main_box_2{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main_box_3{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main_box_4{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* flex-wrap */
+
+.flex_wrap{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_5{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main_box_6{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_box_7{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.main_box_8{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* justify content ROW*/
+
+.justify_content{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_9{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main_box_10{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_box_11{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: center;
+}
+
+.main_box_12{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_box_13{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_box_14{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* justify content COLUMN */
+
+.justify_content{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_15{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.main_box_16{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.main_box_17{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_box_18{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.main_box_19{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main_box_20{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Align items ROW*/
+
+.align_items{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_21{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.main_box_22{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.main_box_23{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: center;
+}
+
+.main_box_24{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: stretch;
+}
+
+.main_box_25{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Align items COLUMN*/
+
+.align_items{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_27{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main_box_28{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.main_box_29{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_box_30{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Align self ROW*/
+
+.align_self{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_32{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: center;
+}
+
+#box_1{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+
+    align-self: flex-start;
+}
+
+#box_2{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+    
+    align-self: flex-end;
+}
+
+#box_3{
+    background-color: rgb(3, 82, 98);
+    border: solid white;
+    padding: 10px;
+
+    align-self: stretch;
+}
+
+#box_4{
+    background-color: rgb(22, 3, 90);
+    border: solid white;
+    padding: 10px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Align self COLUMN*/
+
+.align_self{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_33{
+    background-color: rgb(25, 47, 4);
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#box_5{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+
+    align-self: flex-start;
+}
+
+#box_6{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+    
+    align-self: flex-end;
+}
+
+#box_7{
+    background-color: rgb(3, 82, 98);
+    border: solid white;
+    padding: 10px;
+
+    align-self: stretch;
+}
+
+#box_8{
+    background-color: rgb(22, 3, 90);
+    border: solid white;
+    padding: 10px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* flex grow*/
+
+/* ------------------------------------------ */
+/* Config 1*/
+
+.flex_grow{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_34{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 100px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_2_flex_1{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex-grow: 1;
+}
+
+
+/* ------------------------------------------ */
+/* Config 2*/
+
+.main_box_35{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 100px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_1_flex_50{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+
+    flex-grow: 2.5;
+}
+
+.box_2_flex_50{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex-grow: 5;
+}
+
+.box_3_flex_50{
+    background-color: rgb(3, 82, 98);
+    border: solid white;
+    padding: 10px;
+
+    flex-grow: 2.5;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* flex shrink*/
+
+/* ------------------------------------------ */
+/* Config 1*/
+
+.flex_shrink{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_36{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 100px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_1_shrink_1{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+
+    flex-shrink: 0;
+}
+
+.box_2_shrink_1{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex-shrink: 1;
+}
+
+
+/* ------------------------------------------ */
+/* Config 2*/
+
+.main_box_37{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 100px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_1_shrink_2{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+
+    flex-shrink: 5;
+}
+
+.box_2_shrink_2{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex-shrink: 2;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* flex basis*/
+
+/* ------------------------------------------ */
+/* Config 1*/
+
+.flex_basis{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_38{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 100px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_1_basis_1{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+
+    flex-basis: 0;
+}
+
+.box_2_basis_1{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex-basis: 0;
+}
+
+
+/* ------------------------------------------ */
+/* Config 2*/
+
+.main_box_39{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 100px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_1_basis_2{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+
+    flex-basis: 30%;
+}
+
+.box_2_basis_2{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex-basis: 50%;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* flex shorthand*/
+
+/* ------------------------------------------ */
+/* Config 1*/
+
+.flex_basis{
+    border: solid white;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+.main_box_40{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 100px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_1_shorthand{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+}
+
+.box_2_shorthand{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex: 1;
+}
+
+.box_3_shorthand{
+    background-color: rgb(3, 82, 98);
+    border: solid white;
+    padding: 10px;
+}
+
+
+/* ------------------------------------------ */
+/* Config 2*/
+
+.main_box_41{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+}
+
+.box_4_shorthand{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+}
+
+.box_5_shorthand{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex: 1;
+}
+
+.box_6_shorthand{
+    background-color: rgb(3, 82, 98);
+    border: solid white;
+    padding: 10px;
+}
+
+
+/* ------------------------------------------ */
+/* Config 3*/
+
+.main_box_42{
+    background-color: rgb(25, 47, 4);
+    padding: 20px;
+    height: 200px;
+    border: solid white;
+    width: 50%;
+    margin-bottom: 30px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ------------------------------------------ */
+/* Config 4*/
+
+.box_7_shorthand{
+    background-color: rgb(106, 7, 7);
+    border: solid white;
+    padding: 10px;
+    
+    flex: 1;
+}
+
+.box_8_shorthand{
+    background-color: rgb(113, 6, 85);
+    border: solid white;
+    padding: 10px;
+
+    flex: 3;
+}
+
+.box_9_shorthand{
+    background-color: rgb(3, 82, 98);
+    border: solid white;
+    padding: 10px;
+
+    flex: 1;
+    width: 10%;
+}

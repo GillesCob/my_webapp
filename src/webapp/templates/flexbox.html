@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/flexbox/styles.css')}}">
+
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Flex directions</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=35484" target="_blank">Lien cours</a></h2>
+    <div class="flex_directions">
+        <p>[flex-direction: row;] = Ne rien mettre</p>
+        <div class="mise_en_page">
+            <div class="main_box_1">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/row.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[flex-direction: row-reverse;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_2">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="../static/images/old_cv/row-reverse.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p> [flex-direction: column;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_3">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/column.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p> [flex-direction: column-reverse;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_4">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/column-reverse.png" alt="row" id="image">
+            </div>
+        </div>
+    </div>
+
+
+    <h1>Flex-wrap</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=35630" target="_blank">Lien cours</a></h2>
+    <div class="flex_wrap">
+        <p>[flex-wrap: nowrap;] = Ne rien mettre</p>
+        <div class="mise_en_page">
+            <div class="main_box_5">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/no-wrap.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[flex-wrap: wrap;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_6">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/wrap.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[wrap-reverse]</p>
+        <div class="mise_en_page">
+            <div class="main_box_7">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/wrap-reverse.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[wrap-reverse] + [flex-direction: row-reverse;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_8">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+                <div class ="box_4">
+                    Box 4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Justify content ➡️ ROW</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2>J'ai retiré le padding pour bien comprendre les nuances entre les configs</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=35841" target="_blank">Lien cours</a></h2>
+    <div class="justify_content">
+        <p>[justify-content: flex-start;] = Ne rien mettre</p>
+        <div class="mise_en_page">
+            <div class="main_box_9">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex-start.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[justify-content: flex-end;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_10">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+            
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex-end.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[justify-content: center;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_11">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+               
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/center.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[justify-content: space-around;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_12">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/space-around.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[justify-content: space-between;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_13">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/space-between.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[justify-content: space-evenly;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_14">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/space-evenly.png" alt="row" id="image">
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Justify content ⬇️ COLUMN</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2>J'ai retiré le padding pour bien comprendre les nuances entre les configs</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=36134" target="_blank">Lien cours</a></h2>
+    <div class="justify_content">
+        <p>[justify-content: flex-start;] + [flex-direction: column;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_15">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex-start-2.png" alt="row" id="image_2">
+            </div>
+        </div>
+
+        <p>[justify-content: flex-end;] + [flex-direction: column;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_16">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+            
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex-end-2.png" alt="row" id="image_2">
+            </div>
+        </div>
+
+        <p>[justify-content: center;] + [flex-direction: column;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_17">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+               
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/center-2.png" alt="row" id="image_2">
+            </div>
+        </div>
+
+        <p>[justify-content: space-around;] + [flex-direction: column;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_18">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/space-around-2.png" alt="row" id="image_2">
+            </div>
+        </div>
+
+        <p>[justify-content: space-between;] + [flex-direction: column;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_19">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/space-between-2.png" alt="row" id="image_2">
+            </div>
+        </div>
+
+        <p>[justify-content: space-evenly;] + [flex-direction: column;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_20">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/space-evenly-2.png" alt="row" id="image_2">
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Align items ➡️ ROW</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=36148" target="_blank">Lien cours</a></h2>
+    <div class="align_items">
+        <p>[align-items: flex-start;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_21">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_flex_start.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[align-items: flex-end;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_22">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+            
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_flex_end.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[align-items: center;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_23">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+               
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_center.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[align-items: stretch;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_24">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_stretch.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[align-items: baseline;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_25">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    <h1>Box 2</h1>
+                </div>
+                <div class ="box_3">
+                    <h2>Box 3</h2>
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_baseline.png" alt="row" id="image">
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Align items ⬇️ COLUMN</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <div class="align_items">
+        <p>[align-items: flex-start;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_27">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_flex_start_2.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[align-items: flex-end;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_28">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+            
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_flex_end_2.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[align-items: center;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_29">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+               
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_center_2.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>[align-items: stretch;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_30">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/ai_stretch_2.png" alt="row" id="image">
+            </div>
+        </div>
+
+
+    </div>
+
+    <h1>Align self ➡️ ROW</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2>Align self ne va s'occuper que d'un seul élément dans notre container</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=36496" target="_blank">Lien cours</a></h2>
+    <div class="align_self">
+        <p>Box 1 = [align-self: flex-start;]</p>
+        <p>Box 2 = [align-self: flex-end;]</p>
+        <p>Box 3 = [align-self: stretch;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_32">
+                <div id ="box_1">
+                    Box 1
+                </div>
+                <div id ="box_2">
+                    Box 2
+                </div>
+                <div id ="box_3">
+                    Box 3
+                </div>
+                <div id ="box_4">
+                    Box 4
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <h1>Align self ⬇️ COLUMN</h1>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2>Align self ne va s'occuper que d'un seul élément dans notre container</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=36599" target="_blank">Lien cours</a></h2>
+    <div class="align_self">
+        <p>Box 1 = [align-self: flex-start;]</p>
+        <p>Box 2 = [align-self: flex-end;]</p>
+        <p>Box 3 = [align-self: stretch;]</p>
+        <div class="mise_en_page">
+            <div class="main_box_33">
+                <div id ="box_5">
+                    Box 1
+                </div>
+                <div id ="box_6">
+                    Box 2
+                </div>
+                <div id ="box_7">
+                    Box 3
+                </div>
+                <div id ="box_8">
+                    Box 4
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <h1>flex-* Properties</h1>
+
+    <h3>flex-grow</h3>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=36756" target="_blank">Lien cours</a></h2>
+    <div class="flex_grow">
+        <p>[flex-grow:1] pour Box 2</p>
+        <p>Box 2 va compléter l'espace vide</p>
+        <div class="mise_en_page">
+            <div class="main_box_34">
+                <div class ="box_1">
+                    Box 1
+                </div>
+                <div class ="box_2_flex_1">
+                    Box 2
+                </div>
+                <div class ="box_3">
+                    Box 3
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex_grow.png" alt="row" id="image">
+            </div>
+        </div>
+    </div>
+    <div class="flex_grow">
+        <p>Box 2 va prendre 50% de l'espace</p>
+        <div class="mise_en_page">
+            <div class="main_box_35">
+                <div class ="box_1_flex_50">
+                    Box 1
+                </div>
+                <div class ="box_2_flex_50">
+                    Box 2
+                </div>
+                <div class ="box_3_flex_50">
+                    Box 3
+                </div>
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex_grow.png" alt="row" id="image">
+            </div>
+        </div>
+
+    </div>
+
+
+    <h3>flex-shrink</h3>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=37043" target="_blank">Lien cours</a></h2>
+    <div class="flex_shrink">
+        <p>[flex-shrink: 1;] pour Box 2 et [flex-shrink: 0;] pour Box 1</p>
+        <p>Box 2 va s'adapter contrairement à Box 1</p>
+        <div class="mise_en_page">
+            <div class="main_box_36">
+                <div class ="box_1_shrink_1">
+                    Box 1 Box 1 Box 1 Box 1
+                </div>
+                <div class ="box_2_shrink_1">
+                    Box 2 Box 2 Box 2 Box 2
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex_shrink.png" alt="row" id="image">
+            </div>
+        </div>
+    </div>
+    <div class="flex_shrink">
+        <p>[flex-shrink: 2;] pour Box 2 et [flex-shrink: 5;] pour Box 1</p>
+        <p>Box 1 va s'adapter de manière plus importante</p>
+        <div class="mise_en_page">
+            <div class="main_box_36">
+                <div class ="box_1_shrink_2">
+                    Box 1 Box 1 Box 1 Box 1
+                </div>
+                <div class ="box_2_shrink_2">
+                    Box 2 Box 2 Box 2 Box 2
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex_shrink.png" alt="row" id="image">
+            </div>
+        </div>
+    </div>
+
+
+    <h3>flex-basis</h3>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=37043" target="_blank">Lien cours</a></h2>
+    <div class="flex_basis">
+        <p>[flex-basis: 0;] pour les 2 box</p>
+        <p>Pas d'adaptation, on fait au plus serré</p>
+        <div class="mise_en_page">
+            <div class="main_box_38">
+                <div class ="box_1_basis_1">
+                    Box 1 Box 1 Box 1 Box 1
+                </div>
+                <div class ="box_2_basis_1">
+                    Box 2 Box 2 Box 2 Box 2
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex_basis.png" alt="row" id="image">
+            </div>
+        </div>
+    </div>
+    <div class="flex_basis">
+        <p>[flex-basis: 30%;] pour Box 1 et [flex-basis: 50%;] pour Box 2</p>
+        <p>Box 1 va prendre 30% de la place dispo et Box 2 va prendre 50%</p>
+        <div class="mise_en_page">
+            <div class="main_box_39">
+                <div class ="box_1_basis_2">
+                    Box 1 Box 1 Box 1 Box 1
+                </div>
+                <div class ="box_2_basis_2">
+                    Box 2 Box 2 Box 2 Box 2
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex_basis.png" alt="row" id="image">
+            </div>
+        </div>
+    </div>
+
+    <h4>flex-shorthand</h4>
+    <h2>On va l'utiliser à la place de flex-grow, flex-shrink ou flex-basis</h2>
+    <h2>Mettre obligatoirement [display: flex;] pour appliquer les modifications</h2>
+    <h2><a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=37384" target="_blank">Lien cours</a></h2>
+    <div class="flex_basis">
+        <p>en général on ne touche qu'à une seule Box et c'est elle qui va s'adapter à la taille de l'écran</p>
+        <p>[flex: 1;] pour Box 2</p>
+        <div class="mise_en_page">
+            <div class="main_box_40">
+                <div class ="box_1_shorthand">
+                    Box 1
+                </div>
+                <div class ="box_2_shorthand">
+                    Box 2
+                </div>
+                <div class ="box_3_shorthand">
+                    Box 3
+                </div>
+
+            </div>
+            <div class="main_box_1_image">
+                <img src="images/flex_shorthand.png" alt="row" id="image">
+            </div>
+        </div>
+
+        <p>ça s'adapte même en hauteur si le div grandit</p>
+        <div class="mise_en_page">
+            <div class="main_box_41">
+                <div class ="box_4_shorthand">
+                    Box 1
+                </div>
+                <div class ="box_5_shorthand">
+                    Box 2
+                </div>
+                <div class ="box_6_shorthand">
+                    Box 3
+                </div>
+            </div>
+        </div>
+
+        <p>Et c'est pareil si on passe en colonne</p>
+        <div class="mise_en_page">
+            <div class="main_box_42">
+                <div class ="box_4_shorthand">
+                    Box 1
+                </div>
+                <div class ="box_5_shorthand">
+                    Box 2
+                </div>
+                <div class ="box_6_shorthand">
+                    Box 3
+                </div>
+            </div>
+        </div>
+
+        <p>Si on veut que 1 et 3 prennent le même espace, j'ai juste à leur donner la même valeur de flex</p>
+        <p>c'est alors similaire à width: 10%; par exemple mais bien plus simple à écrire</p>
+        <div class="mise_en_page">
+            <div class="main_box_41">
+                <div class ="box_7_shorthand">
+                    Box 1
+                </div>
+                <div class ="box_8_shorthand">
+                    Box 2
+                </div>
+                <div class ="box_9_shorthand">
+                    Box 3
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

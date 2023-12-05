@@ -18,6 +18,10 @@ def menu_1():
 def menu_2():
     return render_template('menu_2.html',user=current_user)
 
+@views.route('/flexbox')
+def flexbox():
+    return render_template('flexbox.html',user=current_user)
+
 @views.route('/login')
 def login():
     return render_template('login.html',user=current_user)
