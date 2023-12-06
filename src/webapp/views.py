@@ -9,6 +9,7 @@ views = Blueprint("views", __name__)
 def home_page():
     return render_template('home.html',user=current_user)
 
+# ------------- CV ------------- #
 @views.route('/cv-1')
 def cv_1():
     return render_template('cv_1.html',user=current_user)
@@ -18,13 +19,16 @@ def cv_1():
 def cv_2():
     return render_template('cv_2.html',user=current_user)
 
-@views.route('/flexbox')
-def flexbox():
-    return render_template('flexbox.html',user=current_user)
+
+# ------------- CSS ------------- #
 
 @views.route('/bootstrap')
 def bootstrap():
     return render_template('bootstrap.html',user=current_user)
+
+@views.route('/bootstrap_1')
+def bootstrap_1():
+    return render_template('bootstrap_1.html',user=current_user)
 
 @views.route('/carousel')
 def carousel():
@@ -34,9 +38,26 @@ def carousel():
 def responsive():
     return render_template('responsive.html',user=current_user)
 
+@views.route('/bootstrap_2')
+def bootstrap_2():
+    return render_template('bootstrap_2.html',user=current_user)
+
+
+
+
+@views.route('/flexbox')
+def flexbox():
+    return render_template('flexbox.html',user=current_user)
+
+
+# ------------- GITHUB ------------- #
+
 @views.route('/github')
 def github():
     return render_template('github.html',user=current_user)
+
+
+# ------------- OUTILS ------------- #
 
 @views.route('/outils_design')
 def outils_design():
@@ -55,7 +76,7 @@ def outils_documentaire():
     return render_template('outils_documentaire.html',user=current_user)
 
 
-
+# ------------- IDENTIFICATION ------------- #
 
 @views.route('/login')
 def login():

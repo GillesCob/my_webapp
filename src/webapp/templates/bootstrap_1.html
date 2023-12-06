@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contenairs
+{% endblock %}
+
+
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/app/style.css')}}">
+
+{% endblock %}
+
+
+{% block content %}
+<h1>Containers</h1>
+<div>
+
+</br>
+    <div>
+        <img src="../static/images/containers/containers_1.png" alt="row" id="image">
+    </div>
+    <div>
+        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=47266" target="_blank">ici</a>
+    </div>
+</div>
+
+<h1>Grid system</h1>
+<div>
+    <div>
+        Bootstrap divise un container en 12 colonnes. A nous de jouer avec ensuite afin d'afficher les éléments comme bon nous semble : 
+    </div>
+    <div>
+        <img src="../static/images/containers/containers_2.png" alt="row" id="image">
+    </div>
+    <div>
+        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=47593" target="_blank">ici</a>
+    </div>
+</div>
+
+<h1>Offsets</h1>
+<div>
+    <div>
+        Permet d'ajouter de l'espace avant une colonne : 
+    </div>
+    <div>
+        <img src="../static/images/containers/containers_3.png" alt="row" id="image">
+    </div>
+    <div>
+        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=48270" target="_blank">ici</a>
+    </div>
+</div>
+
+<h1>Gutters</h1>
+<div>
+    <div>
+        Permet d'ajouter de l'espace entre les lignes et les colonnes dans le système proposé par Bootstrap.
+        Nous ajoutons par exemple un espace de 3 entre les colonnes ci-dessous : 
+    </div>
+    <div>
+        <img src="../static/images/containers/containers_4.png" alt="row" id="image">
+    </div>
+    <div>
+        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=48460" target="_blank">ici</a>
+    </div>
+</div>
+
+{% endblock %}
