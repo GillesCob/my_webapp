@@ -34,10 +34,6 @@ def bootstrap_1():
 def carousel():
     return render_template('carousel.html',user=current_user)
 
-@views.route('/responsive')
-def responsive():
-    return render_template('responsive.html',user=current_user)
-
 @views.route('/bootstrap_2')
 def bootstrap_2():
     return render_template('bootstrap_2.html',user=current_user)

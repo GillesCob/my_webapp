@@ -14,24 +14,179 @@ Caroussel
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/carousel/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/app/style.css')}}">
+
 
 
 {% endblock %}
 
 
 {% block content %}
-<h1>Carousel</h1>
-Lien vers le  <a href="https://www.youtube.com/watch?v=zVjAA6UxvtU&list=PLK5U0tyd34tCrlOvIfeVO6YzW_z-f0jxk&index=11">cours</a>
-</br>
-</br>
-<!--Carousel n°1-->
-<div id="carouselExampleCaptions_1" class="carousel slide">
 
+  <div class="corps_page p-1">
+  <h1>Carousel</h1>
+
+  <!------------------------Accordéon-------------------------->
+  <h3 class="font-weight-semi-bold">Carousel</h3>
+  <div class="accordion mb-4" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed no-outline" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Component qui permet d'afficher plusieurs images et de passer facilement de l'une à l'autre.
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body custom-text-background">
+          <!--Contenu du sujet-->
+          <div class="row px-xl-5">
+              <div class="col">
+                  <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                      <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-4">Description</a>
+                      <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-5">Code</a>
+                      <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-6">Sources
+                          complémentaires</a>
+                  </div>
+
+                  <div class="tab-content">
+                      <!--Page 1-->
+                      <div class="tab-pane fade show active" id="tab-pane-4">
+                          <h4 class="mb-3">Description</h4>
+                          <p>C'est un component très utilisé notamment sur les landing pages.
+                          </p>
+                          <div class="col-10 offset-1 p-3">
+                              <img src="../static/images/carousel/carousel_1.png" alt="row"
+                                  class="img-fluid">
+                          </div>
+                      </div>
+                      <!--Page 2-->
+                      <div class="tab-pane fade" id="tab-pane-5">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h4 class="mb-4">Code</h4>
+                                <div class="media mb-4">
+                                    <div class="media-body">
+                                        <p>On trouve tout le code nécessaire dans la <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank">documentation présente sur le site de Bootstrap</a>.</p>
+                                        <p class="text-danger">Attention à la version Bootstrap utilisée !</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <!--Page 3-->
+                      <div class="tab-pane fade" id="tab-pane-6">
+                          <h4 class="mb-3">Sources complémentaires</h4>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <ul class="list-group list-group-flush">
+                                      <li class="list-group-item px-0">
+                                          <a href="https://getbootstrap.com/docs/5.3/components/accordion/"
+                                              target="_blank">Lien vers Bootstrap</a>
+                                      </li>
+                                      <li class="list-group-item px-0">
+                                        Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                    </li>
+                                      <li class="list-group-item px-0">
+                                          Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                      </li>
+                                      <li class="list-group-item px-0">
+                                          Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="col-md-6">
+                                  <ul class="list-group list-group-flush">
+                                      <li class="list-group-item px-0">
+                                          Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                      </li>
+                                      <li class="list-group-item px-0">
+                                          Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                      </li>
+                                      <li class="list-group-item px-0">
+                                          Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                      </li>
+                                      <li class="list-group-item px-0">
+                                          Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="font-weight-semi-bold mb-5">Voici quelques exemples de carousels développés au fil de mon apprentissage: </h4>
+  <!--Carousel n°1-->
+  <div id="carouselExampleCaptions_1" class="carousel slide">
+
+
+      <!--1ère slide-->
+      <div class="carousel-inner d-flex align-items-center">
+        <div class="carousel-item active c-item_1">
+          <img src="https://www.photo-paysage.com/albums/userpics/10001/Cascade_-15.JPG" class="c-img_1" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Titre slide 1</h5>
+            <p>Description slide 1</p>
+          </div>
+        </div>
+
+        <!--2ème slide-->
+        <div class="carousel-item c-item_1">
+          <img src="https://archzine.fr/wp-content/uploads/2015/08/fond-d-ecrans-hd-avec-une-jolie-photo-de-la-mer-et-coucher-de-soleil-orange.jpg" class="c-img_1" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Titre slide 2</h5>
+            <p>Description slide 2</p>
+
+          </div>
+        </div>
+
+
+        <!--3ème slide-->
+        <div class="carousel-item c-item_1">
+          <img src="https://www.naturephotographie.com/wp-content/uploads/2018/11/www.naturephotographie.com-garden-of-nature.jpg" class="c-img_1" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Titre slide 3</h5>
+            <p>Description slide 3</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Boutons avant/après-->
+      <div class="d-flex justify-content-center">
+
+        <button class="carousel-control-prev_1" type="button" data-bs-target="#carouselExampleCaptions_1" data-bs-slide="prev" style="margin-right: 10px;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next_1" type="button" data-bs-target="#carouselExampleCaptions_1" data-bs-slide="next" style="margin-right: 10px;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+  </br>
+  </br>
+
+
+    <!--Carousel n°2-->
+  <div id="carouselExampleCaptions_2" class="carousel slide">
+    <!--3 petits boutons en bas-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
     <!--1ère slide-->
     <div class="carousel-inner d-flex align-items-center">
       <div class="carousel-item active c-item_1">
-        <img src="https://www.photo-paysage.com/albums/userpics/10001/Cascade_-15.JPG" class="c-img_1" alt="...">
+        <img src="https://www.photo-paysage.com/albums/userpics/10001/Cascade_-15.JPG" class="c-img_2" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Titre slide 1</h5>
           <p>Description slide 1</p>
@@ -39,8 +194,8 @@ Lien vers le  <a href="https://www.youtube.com/watch?v=zVjAA6UxvtU&list=PLK5U0ty
       </div>
 
       <!--2ème slide-->
-      <div class="carousel-item c-item_1">
-        <img src="https://archzine.fr/wp-content/uploads/2015/08/fond-d-ecrans-hd-avec-une-jolie-photo-de-la-mer-et-coucher-de-soleil-orange.jpg" class="c-img_1" alt="...">
+      <div class="carousel-item c-item_2">
+        <img src="https://archzine.fr/wp-content/uploads/2015/08/fond-d-ecrans-hd-avec-une-jolie-photo-de-la-mer-et-coucher-de-soleil-orange.jpg" class="c-img_2" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Titre slide 2</h5>
           <p>Description slide 2</p>
@@ -50,8 +205,8 @@ Lien vers le  <a href="https://www.youtube.com/watch?v=zVjAA6UxvtU&list=PLK5U0ty
 
 
       <!--3ème slide-->
-      <div class="carousel-item c-item_1">
-        <img src="https://www.naturephotographie.com/wp-content/uploads/2018/11/www.naturephotographie.com-garden-of-nature.jpg" class="c-img_1" alt="...">
+      <div class="carousel-item c-item_2">
+        <img src="https://www.naturephotographie.com/wp-content/uploads/2018/11/www.naturephotographie.com-garden-of-nature.jpg" class="c-img_2" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Titre slide 3</h5>
           <p>Description slide 3</p>
@@ -60,73 +215,48 @@ Lien vers le  <a href="https://www.youtube.com/watch?v=zVjAA6UxvtU&list=PLK5U0ty
     </div>
 
     <!--Boutons avant/après-->
-    <div class="d-flex justify-content-center">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
 
-      <button class="carousel-control-prev_1" type="button" data-bs-target="#carouselExampleCaptions_1" data-bs-slide="prev" style="margin-right: 10px;">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-
-      <button class="carousel-control-next_1" type="button" data-bs-target="#carouselExampleCaptions_1" data-bs-slide="next" style="margin-right: 10px;">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
-    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</br>
-</br>
-
-
-  <!--Carousel n°2-->
-<div id="carouselExampleCaptions_2" class="carousel slide">
-  <!--3 petits boutons en bas-->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-
-  <!--1ère slide-->
-  <div class="carousel-inner d-flex align-items-center">
-    <div class="carousel-item active c-item_1">
-      <img src="https://www.photo-paysage.com/albums/userpics/10001/Cascade_-15.JPG" class="c-img_2" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Titre slide 1</h5>
-        <p>Description slide 1</p>
-      </div>
-    </div>
-
-    <!--2ème slide-->
-    <div class="carousel-item c-item_2">
-      <img src="https://archzine.fr/wp-content/uploads/2015/08/fond-d-ecrans-hd-avec-une-jolie-photo-de-la-mer-et-coucher-de-soleil-orange.jpg" class="c-img_2" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Titre slide 2</h5>
-        <p>Description slide 2</p>
-
-      </div>
-    </div>
-
-
-    <!--3ème slide-->
-    <div class="carousel-item c-item_2">
-      <img src="https://www.naturephotographie.com/wp-content/uploads/2018/11/www.naturephotographie.com-garden-of-nature.jpg" class="c-img_2" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Titre slide 3</h5>
-        <p>Description slide 3</p>
-      </div>
-    </div>
-  </div>
-
-  <!--Boutons avant/après-->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions_2" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
+
+
+
+<!------------------------Javascript-------------------------->
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<!--Scroll quand j'ouvre un accordéon-->
+<script>
+  $(document).ready(function () {
+      $('.collapse').on('shown.bs.collapse', function () {
+          var titleOffset = $(this).siblings('.accordion-header').offset();
+          var adjustedOffset = titleOffset.top - 42; // Ajustez la valeur selon vos besoins
+          $('html, body').animate({
+              scrollTop: adjustedOffset
+          }, 5);
+      });
+  });
+</script>
+
+<!--Scroll quand je ferme un accordéon-->
+<script>
+  $(document).ready(function () {
+      $('.collapse').on('hidden.bs.collapse', function () {
+          // Faire défiler la page vers le haut avec une animation douce
+          $('html, body').animate({
+              scrollTop: 0
+          }, 5);
+      });
+  });
+</script>
 {% endblock %}

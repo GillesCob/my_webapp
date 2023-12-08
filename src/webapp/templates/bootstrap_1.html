@@ -1,73 +1,739 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Contenairs
+Bootstrap 2
 {% endblock %}
 
 
 {% block head %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/app/style.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/app/style.css')}}">
 
 {% endblock %}
 
 
 {% block content %}
-<h1>Containers</h1>
-<div>
 
-</br>
-    <div>
-        <img src="../static/images/containers/containers_1.png" alt="row" id="image">
+
+
+
+<div class="corps_page p-1">
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark-subtle mb-3">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
+            <h1 class="font-weight-semi-bold text-uppercase">Bootstrap</h1>
+        </div>
     </div>
-    <div>
-        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=47266" target="_blank">ici</a>
+    <!-- Header End -->
+
+    <div class="accordion container-fluid" id="accordionExample">
+
+
+<!------------------------Premier sujet dans l'accordéon-------------------------->
+        <h3 class="font-weight-semi-bold">Container</h3>
+        <div class="accordion-item mb-3">
+            <!--Bouton de l'accordéon-->
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed btn-secondary no-outline" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Un container Bootstrap structure et aligne le contenu de la page.
+                </button>
+            </h2>
+
+            <!--Eléments masqués avant clic-->
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-text-background">
+                    <!--Contenu du sujet-->
+                    <div class="row px-xl-5">
+                        <div class="col">
+                            
+                            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Description</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Code</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-3">Sources complémentaires</a>
+                            </div>
+
+                            <div class="tab-content">
+                                <!--Page 1-->
+                                <div class="tab-pane fade show active" id="tab-pane-1">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>Un container avec Bootstrap est un élément HTML qui enveloppe le contenu de
+                                        la page, lui appliquant une mise en forme et un espacement appropriés pour
+                                        assurer une présentation cohérente sur différentes tailles d'écrans.
+                                    </p>
+                                    <p>
+                                        C'est une notion essentielle afin de réaliser des sites en responsive avec
+                                        Bootstrap.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/containers/containers_1.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+                                    <p>
+                                        Dans la majorité des cas pour le moment on va utiliser <i>container-fluid</i>.
+                                    </p>
+                                </div>
+
+                                <!--Page 2-->
+                                <div class="tab-pane fade" id="tab-pane-2">
+                                    <div class="col-md-12">
+
+                                        <!-- The text field -->
+                                        <div class="col-4 bg-black text-light p-3" id="myInput">
+<pre id="codeSnippet_container">
+    &lt;div class="container-fluid"&gt;
+        &lt;p&gt;Contenu du container&lt;/p&gt;
+    &lt;/div&gt;
+</pre>
+                                        </div>
+
+                                        <!-- The button used to copy the text -->
+                                        <div class="col-6">
+                                            <button onclick="myFunction_container()">Copier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!--Page 3-->
+                                <div class="tab-pane fade" id="tab-pane-3">
+                                    <h4 class="mb-3">Sources complémentaires</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=47266"
+                                                        target="_blank">Cours Youtube - Jovian</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://jovian.com/aakashns/bootstrap-css-framework#C50"
+                                                        target="_blank">PDF cours - Jovian</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    Source à venir
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Source à venir
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!------------------------Deuxième sujet dans l'accordéon-------------------------->
+        <h3 class="font-weight-semi-bold">Grid system</h3>
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed no-outline" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Le Grid system de Bootstrap est une grille à 12 colonnes pour structurer et aligner le contenu
+                    de manière responsive.
+                </button>
+            </h2>
+
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-text-background">
+                    <!--Contenu du sujet-->
+                    <div class="row px-xl-5">
+                        <div class="col">
+                            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-4">Description</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-5">Code</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-6">Sources
+                                    complémentaires</a>
+                            </div>
+
+                            <div class="tab-content">
+                                <!--Page 1-->
+                                <div class="tab-pane fade show active" id="tab-pane-4">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>Le Grid system de Bootstrap divise l'espace en 12 colonnes, facilitant la
+                                        création de mises en page flexibles et adaptatives grâce à des classes
+                                        prédéfinies pour définir la largeur des colonnes et des rangées sur
+                                        différentes tailles d'écrans.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/containers/containers_2.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+
+                                    <p>Nous devons dans un premier temps créer une class "container" puis ensuite une
+                                        autre "row" afin de mettre en place ce quadrillage.
+                                    </p>
+
+                                    <div class="m-3">
+                                        <p>
+                                            Quelques exemples :
+                                        </p>
+
+                                        <div class="row bg-light text-center">
+                                            <div class="col-2" style="border: 1px solid black;">
+                                                Box 1 prend 2 col
+                                            </div>
+                                            <div class="col-1" style="border: 1px solid black;">
+                                                Box 2 prend 1 col
+                                            </div>
+                                            <div class="col-8" style="border: 1px solid black;">
+                                                Box 3 prend 8 col
+                                            </div>
+                                            <div class="col-1 bg-danger" style="border: 1px solid black;">
+                                                Place restante
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-3">
+                                        <p>
+                                            Il est alors possible de modifier la place que prend chaque Box en fonction
+                                            de la largeur de l'écran (responsive)
+                                        </p>
+
+
+                                        <div class="row bg-light text-center">
+                                            <div class="col-2" style="border: 1px solid black;">
+                                                Box 1 prend 2 col
+                                            </div>
+                                            <div class="col-1" style="border: 1px solid black;">
+                                                Box 2 prend 1 col
+                                            </div>
+                                            <div class="col-4 col-md-8" style="border: 1px solid black;">
+                                                Box 4 prend 8 col mais que 3 si on réduit suffisament la fenêtre
+                                            </div>
+                                            <div class="col-5 col-md-1 bg-danger" style="border: 1px solid black;">
+                                                Place restante
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-3">
+                                        <p>
+                                            Dernier exemple avec trois modifications de tailles en fonction de l'écran :
+                                        </p>
+
+                                        <div class="row bg-light text-center">
+                                            <div class="col-2 col-lg-4" style="border: 1px solid black;">
+                                                Box 1
+                                            </div>
+                                            <div class="col-1 col-lg-4" style="border: 1px solid black;">
+                                                Box 2
+                                            </div>
+                                            <div class="col-8 col-lg-4" style="border: 1px solid black;">
+                                                Box 3
+                                            </div>
+                                            <div class="d-lg-none col-1 bg-danger" style="border: 1px solid black;">
+                                                Place restante
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Page 2-->
+                                <div class="tab-pane fade" id="tab-pane-5">
+                                    <div class="col-md-12">
+
+                                        <!-- The text field -->
+                                        <div class="col-10 bg-black text-light p-3" id="myInput">
+<pre id="codeSnippet_grid">
+    &lt;div class="row bg-light text-center"&gt;
+        &lt;div class="col-2 col-lg-4" style="border: 1px solid black;"&gt;
+            Box 1
+        &lt;/div&gt;
+        &lt;div class="col-1 col-lg-4" style="border: 1px solid black;"&gt;
+            Box 2
+        &lt;/div&gt;
+        &lt;div class="col-8 col-lg-4" style="border: 1px solid black;"&gt;
+            Box 3
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+                                        </div>
+                                        <!-- The button used to copy the text -->
+                                        <div class="col-6">
+                                            <button onclick="myFunction_grid()">Copier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!--Page 3-->
+                                <div class="tab-pane fade" id="tab-pane-6">
+                                    <h4 class="mb-3">Sources complémentaires</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=47591"
+                                                        target="_blank">Cours Youtube - Jovian</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://jovian.com/aakashns/bootstrap-css-framework#C50"
+                                                        target="_blank">PDF cours - Jovian</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!------------------------Troisième sujet dans l'accordéon-------------------------->
+        <h3 class="font-weight-semi-bold">Offsets</h3>
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed no-outline" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    L'offset dans Bootstrap décale le placement des éléments pour des mises en page asymétriques.
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-text-background">
+                    <!--Contenu du sujet-->
+                    <div class="row px-xl-5">
+                        <div class="col">
+                            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-7">Description</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-8">Code</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-9">Sources
+                                    complémentaires</a>
+                            </div>
+
+                            <div class="tab-content">
+                                <!--Page 1-->
+                                <div class="tab-pane fade show active" id="tab-pane-7">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>
+                                        L'offset dans Bootstrap permet de décaler le positionnement des éléments dans
+                                        la grille, offrant une flexibilité pour créer des mises en page asymétriques
+                                        en ajustant l'espace avant le début d'une colonne spécifique.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/containers/containers_3.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+
+                                    <div class="row bg-danger text-center">
+                                        <div class="col-2 offset-3 bg-light" style="border: 1px solid black;">
+                                            Box 1 prend 2 col et est décalée de 3 colonnes vers la droite
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--Page 2-->
+                                <div class="tab-pane fade" id="tab-pane-8">
+                                    <div class="col-md-12">
+
+                                        <!-- The text field -->
+                                        <div class="col-7 bg-black text-light p-3" id="myInput">
+<pre id="codeSnippet_offset">
+     &lt;div class="col-2 offset-3 bg-light" style="border: 1px solid black;"&gt;
+        Box 1 prend 2 col et est décalée de 3 colonnes vers la droite
+     &lt;/div&gt;
+</pre>
+                                        </div>
+
+                                        <!-- The button used to copy the text -->
+                                        <div class="col-6">
+                                            <button onclick="myFunction_offset()">Copier</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--Page 3-->
+                                <div class="tab-pane fade" id="tab-pane-9">
+                                    <h4 class="mb-3">Sources complémentaires</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=48270"
+                                                        target="_blank">Cours Youtube - Jovian</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://jovian.com/aakashns/bootstrap-css-framework#C50"
+                                                        target="_blank">PDF cours - Jovian</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!------------------------Quatrième sujet dans l'accordéon-------------------------->        
+        <h3 class="font-weight-semi-bold">Gutters</h3>
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed no-outline" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Les gutters dans Bootstrap sont les espaces entre les colonnes, améliorant la lisibilité.
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-text-background">
+                    <!--Contenu du sujet-->
+                    <div class="row px-xl-5">
+                        <div class="col">
+                            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                                <a class="nav-item nav-link active" data-toggle="tab"
+                                    href="#tab-pane-10">Description</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-11">Exemples</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-12">Sources
+                                    complémentaires</a>
+                            </div>
+
+                            <div class="tab-content">
+                                <!--Page 1-->
+                                <div class="tab-pane fade show active" id="tab-pane-10">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>Les gutters dans Bootstrap représentent les espaces entre les colonnes de la
+                                        grille, jouant un rôle crucial dans l'amélioration de la lisibilité et de
+                                        l'esthétique générale des mises en page.</p>
+                                        <div class="col-10 offset-1 p-3">
+                                            <img src="../static/images/containers/containers_4.png" alt="row"
+                                                class="img-fluid">
+                                        </div>
+                                </div>
+                                <!--Page 2-->
+                                <div class="tab-pane fade" id="tab-pane-11">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4 class="mb-4">Exemples</h4>
+                                            <div class="media mb-4">
+                                                <div class="media-body">
+                                                    <p>Je propose quelques exemples concrets</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Page 3-->
+                                <div class="tab-pane fade" id="tab-pane-12">
+                                    <h4 class="mb-3">Sources complémentaires</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=48434"
+                                                        target="_blank">Cours Youtube - Jovian</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://jovian.com/aakashns/bootstrap-css-framework#C50"
+                                                        target="_blank">PDF cours - Jovian</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!------------------------Cinquième sujet dans l'accordéon-------------------------->        
+<h3 class="font-weight-semi-bold">Utility classes</h3>
+<div class="accordion-item mb-3">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed no-outline" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Classes prédéfinies pour appliquer rapidement des styles spécifiques sans CSS personnalisé.
+        </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body custom-text-background">
+            <!--Contenu du sujet-->
+            <div class="row px-xl-5">
+                <div class="col">
+                    <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                        <a class="nav-item nav-link active" data-toggle="tab"
+                            href="#tab-pane-13">Description</a>
+                        <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-14">Code</a>
+                        <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-15">Sources
+                            complémentaires</a>
+                    </div>
+
+                    <div class="tab-content">
+                        <!--Page 1-->
+                        <div class="tab-pane fade show active" id="tab-pane-13">
+                            <h4 class="mb-3">Description</h4>
+                            <p>Il est possible de les cumuler afin de pouvoir rapidement une mise en forme qui convienne à la situation.</p>
+                                <div class="col-10 offset-1 p-3">
+                                    <img src="../static/images/containers/containers_4.png" alt="row"
+                                        class="img-fluid">
+                                </div>
+                        </div>
+                        <!--Page 2-->
+                        <div class="tab-pane fade" id="tab-pane-14">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4 class="mb-4">Code</h4>
+                                    <div class="media mb-4">
+                                        <div class="media-body">
+                                            <p>Aucun intérêt à mettre ici du code à copier coller. Tout est déjà présent <a href="https://getbootstrap.com/docs/5.0/utilities">ici</a> dans la documentation Bootstrap.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Page 3-->
+                        <div class="tab-pane fade" id="tab-pane-15">
+                            <h4 class="mb-3">Sources complémentaires</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0">
+                                            <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=48752"
+                                                target="_blank">Cours Youtube - Jovian</a>
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            <a href="https://jovian.com/aakashns/bootstrap-css-framework#C50"
+                                                target="_blank">PDF cours - Jovian</a>
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            <a href="https://getbootstrap.com/docs/5.0/layout/utilities/"
+                                                target="_blank">Doc Bootstrap 1 - Utilities for layouts</a>
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            <a href="https://getbootstrap.com/docs/5.0/utilities"
+                                                target="_blank">Doc Bootstrap 2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0">
+                                            Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                        </li>
+                                        <li class="list-group-item px-0">
+                                            Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<h1>Grid system</h1>
-<div>
-    <div>
-        Bootstrap divise un container en 12 colonnes. A nous de jouer avec ensuite afin d'afficher les éléments comme bon nous semble : 
-    </div>
-    <div>
-        <img src="../static/images/containers/containers_2.png" alt="row" id="image">
-    </div>
-    <div>
-        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=47593" target="_blank">ici</a>
     </div>
 </div>
 
-<h1>Offsets</h1>
-<div>
-    <div>
-        Permet d'ajouter de l'espace avant une colonne : 
-    </div>
-    <div>
-        <img src="../static/images/containers/containers_3.png" alt="row" id="image">
-    </div>
-    <div>
-        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=48270" target="_blank">ici</a>
-    </div>
-</div>
 
-<h1>Gutters</h1>
-<div>
-    <div>
-        Permet d'ajouter de l'espace entre les lignes et les colonnes dans le système proposé par Bootstrap.
-        Nous ajoutons par exemple un espace de 3 entre les colonnes ci-dessous : 
-    </div>
-    <div>
-        <img src="../static/images/containers/containers_4.png" alt="row" id="image">
-    </div>
-    <div>
-        Lien vers le cours <a href="https://youtu.be/dX8396ZmSPk?feature=shared&t=48460" target="_blank">ici</a>
-    </div>
-</div>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+<!--Scroll quand j'ouvre un accordéon-->
+<script>
+    $(document).ready(function () {
+        $('.collapse').on('shown.bs.collapse', function () {
+            var titleOffset = $(this).siblings('.accordion-header').offset();
+            var adjustedOffset = titleOffset.top - 42; // Ajustez la valeur selon vos besoins
+            $('html, body').animate({
+                scrollTop: adjustedOffset
+            }, 5);
+        });
+    });
+</script>
+
+<!--Scroll quand je ferme un accordéon-->
+<script>
+    $(document).ready(function () {
+        $('.collapse').on('hidden.bs.collapse', function () {
+            // Faire défiler la page vers le haut avec une animation douce
+            $('html, body').animate({
+                scrollTop: 0
+            }, 5);
+        });
+    });
+</script>
+
+<!-- Copie/colle le code -> Container -->
+<script>
+    function myFunction_container() {
+        // Get the code snippet
+        var codeSnippet = document.getElementById("codeSnippet_container");
+
+        // Create a temporary textarea
+        var tempTextarea = document.createElement("textarea");
+        tempTextarea.value = codeSnippet.innerText;
+
+        // Append the textarea to the body
+        document.body.appendChild(tempTextarea);
+
+        // Select the text in the textarea
+        tempTextarea.select();
+        tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the textarea
+        document.execCommand("copy");
+
+        // Remove the temporary textarea
+        document.body.removeChild(tempTextarea);
+
+    }
+</script>
+
+<!-- Copie/colle le code -> Grid -->
+<script>
+    function myFunction_grid() {
+        // Get the code snippet
+        var codeSnippet = document.getElementById("codeSnippet_grid");
+
+        // Create a temporary textarea
+        var tempTextarea = document.createElement("textarea");
+        tempTextarea.value = codeSnippet.innerText;
+
+        // Append the textarea to the body
+        document.body.appendChild(tempTextarea);
+
+        // Select the text in the textarea
+        tempTextarea.select();
+        tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the textarea
+        document.execCommand("copy");
+
+        // Remove the temporary textarea
+        document.body.removeChild(tempTextarea);
+    }
+</script>
+
+<!-- Copie/colle le code -> Offset -->
+<script>
+    function myFunction_offset() {
+        // Get the code snippet
+        var codeSnippet = document.getElementById("codeSnippet_offset");
+
+        // Create a temporary textarea
+        var tempTextarea = document.createElement("textarea");
+        tempTextarea.value = codeSnippet.innerText;
+
+        // Append the textarea to the body
+        document.body.appendChild(tempTextarea);
+
+        // Select the text in the textarea
+        tempTextarea.select();
+        tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the textarea
+        document.execCommand("copy");
+
+        // Remove the temporary textarea
+        document.body.removeChild(tempTextarea);
+    }
+</script>
+
+
+
+
 
 {% endblock %}
