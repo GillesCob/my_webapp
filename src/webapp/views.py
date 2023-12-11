@@ -38,12 +38,20 @@ def carousel():
 def bootstrap_2():
     return render_template('bootstrap_2.html',user=current_user)
 
-
-
-
 @views.route('/flexbox')
 def flexbox():
     return render_template('flexbox.html',user=current_user)
+
+
+# ------------- Bases de données ------------- #
+
+@views.route('/mongo_db')
+def mongodb_1():
+    return render_template('mongodb_1.html',user=current_user)
+
+@views.route('/outils')
+def mongodb_2():
+    return render_template('mongodb_2.html',user=current_user)
 
 
 # ------------- GITHUB ------------- #
@@ -70,6 +78,13 @@ def outils_deploiement():
 @views.route('/outils_documentaire')
 def outils_documentaire():
     return render_template('outils_documentaire.html',user=current_user)
+
+
+# ------------- FORMATION ------------- #
+@views.route('/semaine1')
+def semaine1():
+    return render_template('semaine1.html',user=current_user)
+
 
 
 # ------------- IDENTIFICATION ------------- #

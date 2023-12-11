@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bootstrap
+{% endblock %}
+
+
+{% block head %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/app/style.css')}}">
+
+{% endblock %}
+
+
+{% block content %}
+<div class="corps_page p-1">
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark-subtle mb-3">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
+            <h1 class="font-weight-semi-bold text-uppercase">Outils</h1>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <div class="accordion container-fluid" id="accordionExample">
+
+<!------------------------Accordéon-------------------------->
+
+
+<!-------------------1er élément--------------------->
+        <h3 class="font-weight-semi-bold">Définition</h3>
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed no-outline" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    MongoDB est une base de données NoSQL orientée document, open source et scalable.
+                </button>
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-text-background">
+                    <!--Contenu du sujet-->
+                    <div class="row px-xl-5">
+                        <div class="col">
+                            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Description</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Sources
+                                    d'information</a>
+                            </div>
+
+                            <div class="tab-content">
+                                <!--Page 1-->
+                                <div class="tab-pane fade show active" id="tab-pane-1">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>
+                                        MongoDB est un système de gestion de base de données NoSQL qui stocke les données sous forme de documents JSON flexibles et hiérarchiques, offrant une évolutivité horizontale, une rapidité de requête et la possibilité de gérer des données non structurées ou semi-structurées.
+                                    </p>
+                                    <p>
+                                        Les documents sont regroupés dans une Collection qui est elle-même dans une Database.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/mongodb/mongodb_1.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <!--Page 2-->
+                                <div class="tab-pane fade" id="tab-pane-2">
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <h4 class="mb-3">Documentation</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4"
+                                                        target="_blank">Site officiel</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://www.mongodb.com/docs/manual/introduction/"
+                                                        target="_blank">Documentation officielle</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://www.mongodb.com/basics/crud"
+                                                        target="_blank">CRUD Operations</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://www.youtube.com/watch?v=UpsZDGutpZc"
+                                                        target="_blank">Cours Tech with Tim (3 vidéos)</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <h4 class="mb-3">Tutoriels</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item px-0">
+                                                    <a href="https://www.youtube.com/watch?v=bASNF0uqivM"
+                                                        target="_blank">Tuto Tech with Tim - Database project</a>
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                                </li>
+                                                <li class="list-group-item px-0">
+                                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+<!-------------------2ème élément--------------------->
+        <h3 class="font-weight-semi-bold">Installation</h3>
+        <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed no-outline" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    MongoDB est une base de données NoSQL orientée document, open source et scalable.
+                </button>
+            </h2>
+
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-text-background">
+                    <!--Contenu du sujet-->
+                    <div class="row px-xl-5">
+                        <div class="col">
+                            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-3">1ère étape</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-4">2ème étape</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-5">3ème étape</a>
+                                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-6">4ème étape</a>
+                            </div>
+
+                            <div class="tab-content">
+                                <!--Page 1-->
+                                <div class="tab-pane fade show active" id="tab-pane-3">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>
+                                        MongoDB est un système de gestion de base de données NoSQL qui stocke les données sous forme de documents JSON flexibles et hiérarchiques, offrant une évolutivité horizontale, une rapidité de requête et la possibilité de gérer des données non structurées ou semi-structurées.
+                                    </p>
+                                    <p>
+                                        Les documents sont regroupés dans une Collection qui est elle-même dans une Database.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/mongodb/mongodb_1.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <!--Page 2-->
+                                <div class="tab-pane fade show active" id="tab-pane-4">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>
+                                        MongoDB est un système de gestion de base de données NoSQL qui stocke les données sous forme de documents JSON flexibles et hiérarchiques, offrant une évolutivité horizontale, une rapidité de requête et la possibilité de gérer des données non structurées ou semi-structurées.
+                                    </p>
+                                    <p>
+                                        Les documents sont regroupés dans une Collection qui est elle-même dans une Database.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/mongodb/mongodb_1.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+
+
+                                <!--Page 3-->
+                                <div class="tab-pane fade show active" id="tab-pane-5">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>
+                                        MongoDB est un système de gestion de base de données NoSQL qui stocke les données sous forme de documents JSON flexibles et hiérarchiques, offrant une évolutivité horizontale, une rapidité de requête et la possibilité de gérer des données non structurées ou semi-structurées.
+                                    </p>
+                                    <p>
+                                        Les documents sont regroupés dans une Collection qui est elle-même dans une Database.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/mongodb/mongodb_1.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <!--Page 4-->
+                                <div class="tab-pane fade show active" id="tab-pane-6">
+                                    <h4 class="mb-3">Description</h4>
+                                    <p>
+                                        MongoDB est un système de gestion de base de données NoSQL qui stocke les données sous forme de documents JSON flexibles et hiérarchiques, offrant une évolutivité horizontale, une rapidité de requête et la possibilité de gérer des données non structurées ou semi-structurées.
+                                    </p>
+                                    <p>
+                                        Les documents sont regroupés dans une Collection qui est elle-même dans une Database.
+                                    </p>
+                                    <div class="col-10 offset-1 p-3">
+                                        <img src="../static/images/mongodb/mongodb_1.png" alt="row"
+                                            class="img-fluid">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+<!------------------------Javascript-------------------------->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+<!--Scroll quand j'ouvre un accordéon-->
+<script>
+    $(document).ready(function () {
+        $('.collapse').on('shown.bs.collapse', function () {
+            var titleOffset = $(this).siblings('.accordion-header').offset();
+            var adjustedOffset = titleOffset.top - 42; // Ajustez la valeur selon vos besoins
+            $('html, body').animate({
+                scrollTop: adjustedOffset
+            }, 5);
+        });
+    });
+</script>
+
+<!--Scroll quand je ferme un accordéon-->
+<script>
+    $(document).ready(function () {
+        $('.collapse').on('hidden.bs.collapse', function () {
+            // Faire défiler la page vers le haut avec une animation douce
+            $('html, body').animate({
+                scrollTop: 0
+            }, 5);
+        });
+    });
+</script>
+{% endblock %}

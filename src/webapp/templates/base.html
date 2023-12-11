@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <!--Navbar-->
+<!------------Navbar-------------->
     <!--https://getbootstrap.com/docs/5.3/components/navbar/-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -32,8 +32,11 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--  Partie de gauche (tous mes menus) -->            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+
+
                     <!--  Dropdown CV -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -85,8 +88,34 @@
                         </ul>
                     </li>
 
+                    <!--  Dropdown Mongo DB -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Bases de données
+                        </a>
+                        <ul class="dropdown-menu">
 
+                            <li>
+                                <a class="nav-link disabled" href="#">Mongo DB</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{{url_for('views.mongodb_1')}}">Fonctionnement</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{{url_for('views.mongodb_2')}}">Outils</a>
+                            </li>
+                            <li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">MDB_4</a>
+                            </li>
+                        </ul>
+                    </li>
 
+                    <!--  Github -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url_for('views.github')}}">Github</a>
                     </li>
@@ -113,63 +142,90 @@
                             </li>
                         </ul>
                     </li>
+
+                    <!--  Dropdown FORMATION -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Formation
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="{{url_for('views.semaine1')}}">Semaine1</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!--  Partie de droite -->
-            {% if user.is_authenticated %}
-            <div class="justify-content-end collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/logout">Se déconnecter</a>
-                    </li>
-                </ul>
+            <div>
+                {% if user.is_authenticated %}
+                <div class="justify-content-end collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+                {% else %}
+                <div class="justify-content-end collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Se connecter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sign-up">S'inscrire</a>
+                        </li>
+                    </ul>
+                </div>
+                {% endif%}
             </div>
-            {% else %}
-            <div class="justify-content-end collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Se connecter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sign-up">S'inscrire</a>
-                    </li>
-                </ul>
-            </div>
-            {% endif%}
         </div>
     </nav>
+<!------------Fin Navbar-------------->
 
-    <!-- Toute cette partie concerne l'affichage des messages flash en fonction de leur catégorie -->
-    {% with messages = get_flashed_messages(with_categories=True) %}
-    {% if messages %}
-    {% for category, message in messages %}
-    <div class="alert alert-{{category}} alter-dismissible fade show" role="alert">
-        <!-- Message en rouge car "danger" -->
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        {{message}}
+
+<!------------Flash-------------->
+    <div>
+        {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{category}} alter-dismissible fade show" role="alert">
+            <!-- Message en rouge car "danger" -->
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            {{message}}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
     </div>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
+<!------------Fin Flash-------------->
 
 
-    <!--Body content-->
+<!------------Body content-------------->
     {% block content %}
     {% endblock %}
+<!------------Fin Body content-------------->
 
+
+<!------------Footer-------------->
     <footer class="footer mt-10px py-3 bg-dark-subtle">
         <div class="container text-center">
-          <span class="text-muted">
-            Gilles COBIGO © 2023. All Rights Reserved.
-        </span>
+            <span class="text-muted">
+                Gilles COBIGO © 2023. All Rights Reserved.
+            </span>
         </div>
-      </footer>
+    </footer>
+<!------------Fin Footer-------------->
 
 
-    <!--Bootstrap-->
+<!------------Botstrap-------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+<!------------Fin Botstrap-------------->
 
 </body>
 
